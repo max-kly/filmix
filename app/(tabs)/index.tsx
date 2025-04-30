@@ -2,7 +2,7 @@ import { icons } from "@/lib/icons";
 import { images } from "@/lib/images";
 import styles from "@/lib/styles";
 import { useRouter } from "expo-router";
-import { Text, View, Image, ScrollView, ActivityIndicator, FlatList } from "react-native";
+import { Text, View, Image, ScrollView, FlatList } from "react-native";
 import SearchBar from "../components/SearchBar";
 import useFetch from "@/services/useFetch";
 import { fetchFilms } from "@/services/api";

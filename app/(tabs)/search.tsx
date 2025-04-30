@@ -1,7 +1,7 @@
 import styles from "@/lib/styles"
 import { images } from "@/lib/images"
 import { icons } from "@/lib/icons"
-import { View, Text, ScrollView, Image, FlatList, ActivityIndicator } from "react-native"
+import { View, Text, ScrollView, Image, FlatList } from "react-native"
 import useFetch from "@/services/useFetch"
 import { fetchFilms } from "@/services/api"
 import SearchBar from "../components/SearchBar"
