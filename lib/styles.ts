@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
         color: '#FFF',
         fontWeight: 500,
         fontSize: 16,
-        marginRight: 55
+        marginRight: 55,
+        width: '90%'
     },
     text: {
         color: '#FFF',
@@ -110,6 +111,14 @@ const styles = StyleSheet.create({
     filmReleaseDate: {
         marginTop: 10,
         fontSize: 12
+    },
+    titleSearchTerm: {
+        color: '#D1C0FF'
+    },
+    loaderArea: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%'
     }
 });
 export default styles

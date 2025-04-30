@@ -1,6 +1,8 @@
 export interface SearchBarProps {
     placeholder: string,
-    onPress?: () => void
+    onPress?: () => void,
+    onChangeText?: (text: string) => void,
+    value?: string
 }
 export interface Film {
     id: number;

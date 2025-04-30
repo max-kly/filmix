@@ -6,7 +6,7 @@ export const tmdb = {
         Authorization: `Bearer ${process.env.EXPO_PUBLIC_API_KEY}`
     }
 }
-export const fetchFilms = async ({ query }: { query: string | null }) => {
+export const fetchFilms = async ({ query }: { query: string }) => {
     const endpoint = query
         ? `${tmdb.baseURL}/search/movie?query=${encodeURIComponent(query)}`
         : `${tmdb.baseURL}/movie/popular?sort_by=popularity.desc`
