@@ -22,7 +22,11 @@ export default function Index() {
           : error ?
             <Text style={styles.error}>Something happened 😢{"\n"}{error.message}</Text>
             : <View>
-              <SearchBar placeholder={'Search through 300+ films online'} onPress={() => router.push('/search')} />
+              <SearchBar
+                placeholder={'Search through 300+ films online'}
+                onPress={() => router.push('/search')}
+                editable={false}
+                autoFocus={false} />
               <Text style={styles.title}>Popular films</Text>
               <FlatList
                 data={films}

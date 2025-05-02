@@ -2,7 +2,9 @@ export interface SearchBarProps {
     placeholder: string,
     onPress?: () => void,
     onChangeText?: (text: string) => void,
-    value?: string
+    value?: string,
+    editable?: boolean,
+    autoFocus?: boolean
 }
 export interface Film {
     id: number;

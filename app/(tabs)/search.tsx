@@ -31,6 +31,7 @@ const Search = () => {
                     placeholder={'Search through 300+ films online'}
                     value={searchTerm ? searchTerm : ''}
                     onChangeText={(text: string) => setSearchTerm(text)}
+                    autoFocus={true}
                 />
                 {loading &&
                     <Loader />

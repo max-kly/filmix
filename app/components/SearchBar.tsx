@@ -3,7 +3,7 @@ import styles from "@/lib/styles"
 import { SearchBarProps } from "@/lib/types"
 import { Image, TextInput, View } from "react-native"
 
-const SearchBar = ({ placeholder, onPress , onChangeText, value}: SearchBarProps) => {
+const SearchBar = ({ placeholder, onPress, onChangeText, value, editable, autoFocus }: SearchBarProps) => {
     return (
         <View style={styles.searchBarContainer}>
             <Image
@@ -18,6 +18,8 @@ const SearchBar = ({ placeholder, onPress , onChangeText, value}: SearchBarProps
                 style={styles.searchBarInput}
                 placeholder={placeholder}
                 placeholderTextColor={'#A8B5DB'}
+                editable={editable}
+                autoFocus={autoFocus}
             />
         </View>
     )
